@@ -14,7 +14,7 @@ function fieldPathFromInfo (info) {
 }
 
 const tracer = function (resolver, parent, args, ctx, info) {
-  const result = result = resolver();
+  const result = resolver();
 
   if (isPromise(result)) {
     const fieldPath = fieldPathFromInfo(info);
